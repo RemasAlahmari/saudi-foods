@@ -1,0 +1,40 @@
+.recipes-page { min-height: 100vh; }
+.recipes-header {
+  background: linear-gradient(135deg, var(--brown-dark), var(--red-dark));
+  padding: 8rem 1.5rem 3rem;
+  color: var(--cream);
+}
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+.page-subtitle { color: rgba(245,239,224,0.7); margin-bottom: 2rem; font-size: 1.05rem; }
+.recipes-body { padding: 2.5rem 1.5rem 5rem; }
+.results-count { color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.9rem; }
+.results-count strong { color: var(--text-dark); }
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+.error-state, .empty-state {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+.empty-state span { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.empty-state button, .error-state button {
+  margin-top: 1rem;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background var(--transition);
+}
+.empty-state button:hover, .error-state button:hover { background: var(--red-dark); }
